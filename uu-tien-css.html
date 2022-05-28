@@ -1,0 +1,11 @@
+Độ ưu tiên trong css
++ Các cách gọi css có điểm cao hơn sẽ có độ ưu tiên lớn hơn
+
+Internal và External code css nào chạy sau(gọi sau – viết mới hơn) sẽ được ưu tiên
+Inline: 1000 <h1 style=”color:red”>Điểm 1000</h1>
+#id: 100
+.class: 10
+tag(h1, h2, p, lable): 1
+Equal specificity: lặp lại css, các selector sẽ được cộng vd: h1#id.class = 111
+Universal selector: 0 thẻ chung cho tất cả Vd: * {color:red;}
+Inherited: 0 kế thừa. Các thẻ con sẽ ăn css của thẻ cha
